@@ -1,0 +1,23 @@
+{
+  "name": "supertest-cucumber",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test:poc": "jest specs/supertest.spec.ts",
+    "test:e2e": "cucumber-js --require features/support/*.ts features/*.feature -f json:cucumber_report.json",
+    "generate:report": "node report.js"
+  },
+  "keywords": [],
+  "author": "tooniez",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.7.0",
+    "@types/jest": "^29.5.12",
+    "@types/supertest": "^6.0.2",
+    "cucumber-html-reporter": "^7.1.1",
+    "jest": "^29.5.0",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.1.3"
+  }
+}
