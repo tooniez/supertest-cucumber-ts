@@ -1,0 +1,202 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "manage-posts-on-jsonplaceholder-api;retrieve-a-list-of-posts",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Retrieve a list of posts",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I am a user",
+            "match": {
+              "location": "features/support/steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I send a GET request to /posts",
+            "match": {
+              "location": "features/support/steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 126212249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/support/steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 120791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "the response should contain an array of posts",
+            "match": {
+              "location": "features/support/steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70625
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "manage-posts-on-jsonplaceholder-api;create-a-new-post",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Create a new post",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I am a user",
+            "match": {
+              "location": "features/support/steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "I send a POST request to /posts",
+            "match": {
+              "location": "features/support/steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 351572000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "the API should respond with status code 201",
+            "match": {
+              "location": "features/support/steps.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 373957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "the response should contain the post object",
+            "match": {
+              "location": "features/support/steps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 307166
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "manage-posts-on-jsonplaceholder-api;retrieve-a-specific-post",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Retrieve a specific post",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am a user",
+            "match": {
+              "location": "features/support/steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 498374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I send a GET request to /posts/1",
+            "match": {
+              "location": "features/support/steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 86583500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the API should respond with status code 200",
+            "match": {
+              "location": "features/support/steps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 755249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the response should contain the details of the post",
+            "match": {
+              "location": "features/support/steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 973792
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "manage-posts-on-jsonplaceholder-api",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Manage Posts on JSONPlaceholder API",
+    "tags": [],
+    "uri": "features/posts.feature"
+  }
+]
