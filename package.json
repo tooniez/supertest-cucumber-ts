@@ -1,6 +1,6 @@
 {
   "name": "supertest-cucumber",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "scripts": {
     "test": "npm run test:supertest && npm run test:cucumber",
     "test:supertest": "jest specs/supertest.spec.ts",
