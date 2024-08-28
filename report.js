@@ -11,8 +11,8 @@ if (!fs.existsSync(resultsDir)) {
 
 const options = {
     theme: 'bootstrap',
-    jsonFile: path.join(resultsDir, 'cucumber_report.json'),
-    output: path.join(resultsDir, 'cucumber_report.html'),
+    jsonFile: path.join(resultsDir, 'index.json'),
+    output: path.join(resultsDir, 'index.html'),
     reportSuiteScenarios: true,
     launchReport: false,
 };
