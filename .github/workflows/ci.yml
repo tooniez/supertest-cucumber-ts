@@ -14,7 +14,7 @@ jobs:
       contents: read
       pages: write
       id-token: write
-      
+
     steps:
       - uses: actions/checkout@v3
 
@@ -38,12 +38,14 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: '.'
-          pattern: 'cucumber_report.html'
+          path: './cucumber_report.html'
 
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@v2
+        # with:
+        #   path: './cucumber_report.html'
+        #   index_html: ./cucumber_report.html
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
