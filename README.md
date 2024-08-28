@@ -1,5 +1,7 @@
 # SuperTest Cucumber API Testing Boilerplate 🚀🔬
 
+[![Test and Publish Cucumber Report](https://github.com/tooniez/supertest-cucumber-ts/actions/workflows/ci.yml/badge.svg)](https://github.com/tooniez/supertest-cucumber-ts/actions/workflows/ci.yml)
+
 A ready-to-use boilerplate for API testing using SuperTest and Cucumber with TypeScript.
 
 ## Features
@@ -64,6 +66,12 @@ After running the Cucumber tests, generate an HTML report:
 ```shell
 npm run generate:report
 ```
+
+## View Cucumber Report
+
+You can view the latest Cucumber report on GitHub Pages:
+
+[View Cucumber Report](https://tooniez.github.io/supertest-cucumber-ts/)
 
 ##  License
 
