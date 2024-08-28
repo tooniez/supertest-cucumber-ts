@@ -39,3 +39,5 @@ jobs:
         if: github.ref == 'refs/heads/main'
         id: deployment
         uses: actions/deploy-pages@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
