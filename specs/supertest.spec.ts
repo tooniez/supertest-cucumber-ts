@@ -1,4 +1,4 @@
-import * as supertest from 'supertest'
+import supertest from 'supertest'
 const request = supertest('https://jsonplaceholder.typicode.com')
 
 describe('GET REQUESTS', () =>{

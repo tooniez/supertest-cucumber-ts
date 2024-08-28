@@ -1,13 +1,13 @@
 {
   "name": "supertest-cucumber",
   "version": "0.0.1",
-  "main": "index.js",
   "scripts": {
-    "test:poc": "jest specs/supertest.spec.ts",
-    "test:e2e": "cucumber-js --require features/support/*.ts features/*.feature -f json:cucumber_report.json",
+    "test": "npm run test:supertest && npm run test:cucumber",
+    "test:supertest": "jest specs/supertest.spec.ts",
+    "test:cucumber": "cucumber-js --require features/support/*.ts features/*.feature -f json:cucumber_report.json",
     "generate:report": "node report.js"
   },
-  "keywords": [],
+  "keywords": ["supertest", "cucumber", "typescript", "jest"],
   "author": "tooniez",
   "license": "MIT",
   "description": "",
