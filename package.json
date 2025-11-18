@@ -17,7 +17,7 @@
   "license": "MIT",
   "description": "",
   "devDependencies": {
-    "@cucumber/cucumber": "^10.7.0",
+    "@cucumber/cucumber": "^12.2.0",
     "@types/jest": "^29.5.12",
     "@types/supertest": "^6.0.2",
     "cucumber-html-reporter": "^7.1.1",
