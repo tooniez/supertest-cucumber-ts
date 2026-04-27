@@ -43,7 +43,7 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v5
         # with:
         #   path: './cucumber_report.html'
         #   index_html: ./cucumber_report.html
